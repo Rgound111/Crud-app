@@ -34,10 +34,10 @@ const Edituser = () => {
     } 
 
         useEffect( ()=>{
-            getuserdata();
-        } ,[])
+            getUserData();
+        },[])
 
-        const getuserdata = async() =>{
+        const getUserData = async() =>{
           let response= await getUser(id);
           console.log(response);
           setUser(response.data)
